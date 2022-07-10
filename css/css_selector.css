@@ -1,0 +1,63 @@
+/* css specificity : inline style attribute > id selector > class selector > element selector  */
+/* we can increse the specificity using !important attribute   */
+
+*{
+    /* universal selector */
+}
+body{
+    background: linear-gradient(to right top,rgba(255, 255, 255, 0), rgba(12, 0, 0, 0.87));
+}
+header{
+    background: linear-gradient(to right top,rgba(214, 64, 228, 0.774), rgba(204, 26, 26, 0.87));
+}
+section.my-articles{
+    background: linear-gradient(to right top,rgba(133, 98, 29, 0.774), rgba(46, 187, 133, 0.808));
+}
+
+p{
+    /* it means all the p tag in the webpage */
+    color:blue;  
+}
+header p{  /* called combinator */
+    /* it means only p tag inside header element */
+    color: yellow;
+}
+
+li a{
+    /* it means text color of a tag inside li  */
+    color: aliceblue;
+}
+
+section.my-articles h2{                  /* combinator */
+    color: yellow;
+}
+
+
+section.my-articles > h2{                /* direct child combinator */
+    color: green;
+}
+
+h2+p{                                 /* for all p element just after h2 */
+    color: rgb(230, 8, 8);
+}
+
+
+/* attribute selector  */
+input[type = "text"]{
+    color: white;
+    font: caption;
+    background: gray;
+    border-radius: 2rem;
+}
+input[type = "password"]{
+    background-color: orangered;
+    color: white;
+    border-radius: 2rem;  
+}
+a[href = "https://google.co.in"]{
+    color: aqua;
+}
+a[href *= "google"]{
+    color: red;
+}
+

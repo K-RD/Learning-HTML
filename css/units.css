@@ -1,0 +1,40 @@
+ /*  1.) Absolute units  */
+p{
+    font-size: 16px;    /* default value */
+    font-size: 32px;
+    font-size: 96px;
+    /* 1 in == 96 px */
+    font-size: 1in;
+    /* 1in == 2.54cm */
+    font-size: 2.54cm;
+    /* 1px == 0.75pt */
+    /* 16px == 0.75*16 (12) */
+    font-size: 12pt;
+    font-size: 16px;
+    
+}
+
+ /*  2.) Relative units  */
+body p.rel{
+    font-size: 200%;        /* 100% == 16px (default font-size) */
+
+}
+div.box1{
+    font-size: 20px;
+    border: 2px solid rgb(165, 20, 20);
+}
+
+body div.box1 p{
+    font-size: 200%;  /* it is 200% of 20px */
+    border: 1px solid green;
+    width: 50%;
+    background: lightblue;
+    margin: 10px auto;
+    text-align: center;
+    /* margin-left: 25%; */
+    
+}
+
+div.box2{
+    font-size: 2rem;
+}

@@ -1,0 +1,26 @@
+h1{
+    border: 4px solid red;
+    padding-left: 40px;
+    padding-top: 80px;
+    padding-bottom: 50px;
+    padding-right: 80px;
+    padding: 40px;
+    padding: 20px 40px ;                /* first for top-bottom second for left-right */
+    padding: 10px 20px 30px 40px;       /* top to clock-wise direction */
+    padding: 10px;
+    margin-top: 10px;
+    margin: 50px 80px;                      /* first for top-bottom second for left-right */
+    margin: 10px 20px 30px 40px;            /* top to clock-wise direction */
+    width: 500px;
+    margin: 20px auto;
+    background: lightblue;
+    border-radius: 2rem;
+    border-top: 4px;
+    border-bottom: 4px;     
+    border: 20px 30px;              /* first for top-bottom second for left-right */   
+    border: 20px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: red;
+}
+

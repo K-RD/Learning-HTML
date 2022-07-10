@@ -1,0 +1,15 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.bg-clr{
+    background-color: rgba(143, 133, 133, 0.651);
+
+}
+
+.highlight{
+    background-color: yellowgreen;
+}
+
+.txt-color{
+    color: rgb(25, 36, 190);
+}

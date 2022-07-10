@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* css specificity : inline style attribute > id selector > class selector > element selector  */
+/* inline-style, id ,class,element
+ _ , _ , _ , _
+
+  */
+h1{
+    /* box-sizing: border-box; */  
+    border:2px solid red;
+    margin-bottom: 40px;
+    text-align: center;
+    padding:20px;
+    height:50px;
+    width: 500px;
+    color:green;
+}
+.my-heading{
+    color:brown;
+}
+#main-heading{
+    color: blue;
+}
+p{
+    font-size: 20px;
+    /* line-height: 40px;
+    word-spacing: 10px;
+    letter-spacing: 2px;
+    font-weight: 500; */
+    border:2px solid #4e4e4e;
+    padding: 40px;      
+}
+
+/* pseudo class of a link is link,visited,hover,active  */
+/* denoted by a:link{} a:visited{} a:hover{} a:active{} */
+a{
+    /* display:block; */
+    /* display: inline-block; */
+    border:2px solid green;
+    margin: 10px;
+    height:100px;
+    width: 500px;
+}
+
+/* pseudo class of a input field is input: focus{}  input:required{}  */
+input:focus{
+    padding: 10px;
+    outline: none;
+    border: 2px solid green;
+
+}
+input:required{
+    color: red;
+}
+
+/* pseudo class :first-child , :first-of-type , :last-child ,:last-of-type */
+p:first-child{
+    color:red ;
+}
+p:first-of-type{
+    color:rgb(192, 18, 47);
+}
+p:nth-child(2){
+    color:blueviolet;
+}
+p:nth-child(2n){        /* 2n means multiple of 2 like 0,2,4,6,.... */
+    color:blueviolet; /* n=0,1,2,....  */
+}
+p:nth-of-type(2){       /* instead of 2 we can write 2n or any formula like 2n+1,...    */
+    color:aqua;
+}
+
+
+
+
+/* pseudo class :not() , :empty{} , :root{}  */
+body :not(.fancy){
+    color: rgb(49, 129, 11);
+}
+
+div:empty{
+    height: 200px;
+    width: 200px;
+    border: 2px solid aquamarine;
+    background: #222;
+    margin: 20px;
+}
+:root{
+    background: #222;
+    color: rgb(20, 106, 182);
+}
+
+/* pseudo element p::first-letter{} , class-name::first-line{} , p::selection{} , h1::before{} , h3::after{}  */
+p::first-letter{        /* instead of p we can write any element or class or id name  like h1..h6,p,... */
+    font-size: 32px;    
+}
+p::selection{
+    background: #222;
+    color: whitesmoke;
+}
+.fancy::before{
+    content: "Hii ";
+}
+.fancy::after{
+    content: "over now.";
+}

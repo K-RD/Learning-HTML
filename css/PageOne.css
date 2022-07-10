@@ -1,0 +1,22 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+}
+h3{
+    color: red;
+}
+
+.heading-main{
+    color: rgba(23, 23, 167, 0.87);
+}
+
+.heading-sub{
+    color: rgb(235, 126, 23);
+}
+.para-simple{
+    font: lighter;
+    color: green;
+}
+.para-normal{
+    color: aquamarine;
+}
