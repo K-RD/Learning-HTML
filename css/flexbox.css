@@ -32,6 +32,8 @@
     border: 2px solid lightsalmon;
     /* height: 500px; */
     /* width: 300px; */
+    flex-basis: 500px;          /* width towards main axis */
+    flex-grow: 1;
 }
 .box-1{
     background: #4fc;
